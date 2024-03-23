@@ -1,0 +1,38 @@
+/* App.css */
+.App {
+  text-align: center;
+  margin-top: 150px; /* Add margin to prevent overlap with fixed navbar */
+}
+
+
+
+.section {
+  padding: 120px 0; /* Increased padding to accommodate fixed navbar */
+}
+
+.section h2 {
+  margin-bottom: 20px;
+}
+
+.section p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+@keyframes invertX {
+  0%,
+  100% {
+    filter: invert(0%);
+  }
+  50% {
+    filter: invert(40%);
+  }
+}
+h1{
+  color: #084F91 !important;
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  display: inline-block; /* Required for animation */
+animation: invertX 2s infinite;
+}

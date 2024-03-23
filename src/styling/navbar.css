@@ -1,0 +1,30 @@
+.navbar {
+  background-color: #084F91;
+  color: #fff;
+  padding: 20px 0; /* Increase padding to increase height */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure navbar appears above other elements */
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 80px; /* Adjust height as needed */
+  width: auto;
+}
+
+.navbar-links {
+  display: flex;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
