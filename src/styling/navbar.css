@@ -59,7 +59,7 @@ z-index: 100;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: #f7b06e;
 }
 
 .dropdown-content {

@@ -34,3 +34,6 @@
     display: inline-block; /* Required for animation */
   animation: invertX 5s infinite;
   }
+  .home_heading{
+    color: #084F91!important;
+  }

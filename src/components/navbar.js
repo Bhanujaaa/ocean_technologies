@@ -2,6 +2,7 @@ import React from 'react';
 import "../styling/navbar.css"
 import logo from "../images/frame6white.png"
 
+
 function Navbar() {
   return (
     <nav className="navbar navbar-fixed-top">
@@ -10,6 +11,7 @@ function Navbar() {
           <img src={logo} alt="Ocean Technologies Logo" />
         </div>
         <div className="navbar-links">
+        <a href="/">Home</a>
           <a href="about">About Us</a>
           <a href="contact">Contact Us</a>
           

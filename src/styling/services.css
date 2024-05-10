@@ -1,10 +1,11 @@
 .services_page{
 text-align: center;
 margin-top: 150px; 
+height: 10vh;
 }
   .page_left{
     float: left;
-    width: 90%;
+    width: 80%;
   }
   .page_right{
     float: right;
@@ -24,12 +25,14 @@ margin-top: 150px;
 .service_details {
   display: flex;
   margin-top: 0;
-    /* padding: 20px; */
     background-color: #f8f9fa; /* Add background color */
     border-radius: 10px; /* Add border radius */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
     top:0;
     margin-right: 0;
+    padding-right: 0;
+    margin:0;
+    padding:0
 }
 
 .service_details p {
@@ -38,10 +41,14 @@ margin-top: 150px;
 }
 
 .service_details img {
-    max-width: 100%; /* Ensure image is responsive */
+    width: 100%; /* Ensure image fills the container */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 10px; /* Add border radius */
     margin-bottom: 20px; /* Add spacing between image and text */
+    display: block; /* Ensure the image is displayed as a block element */
 }
+
+
 .dropdown_content li {
     background-color: #f8f9fa; /* Light background color */
     padding: 12px 16px;
@@ -57,10 +64,26 @@ margin-top: 150px;
     left: 0;
     width: 4px; /* Width of the border */
     height: 100%; /* Height of the list item */
-    background-color: red; /* Yellow shade */
+    background-color: #f7b06e; /* Yellow shade */
 }
 
 .dropdown_content li:hover {
     background-color: #e9ecef; /* Darker background color on hover */
     cursor: pointer; /* Change cursor on hover */
+}
+
+.service-image-container {
+    height: 50vh; /* Set a fixed height */
+    overflow: hidden; /* Hide any overflow */
+}
+
+.service-image-container img {
+    width: 100%; /* Ensure the image fills the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the container without stretching */
+    border-radius: 10px; /* Add border radius */
+    display: block; /* Ensure the image is displayed as a block element */
+}
+.service_heading{
+    color:#084F91;
 }
