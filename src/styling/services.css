@@ -3,16 +3,14 @@ text-align: center;
 margin-top: 150px; 
 }
   .page_left{
-    /* left:0; */
     float: left;
-    width: 80%;
-    margin-left: 20px;
+    width: 90%;
   }
   .page_right{
     float: right;
     margin-right: 160px;
+    margin-left: 0px;
     width: 20%;
-    /* display: flex; */
   }
 .dropdown_content{
     display: block;
@@ -21,23 +19,25 @@ margin-top: 150px;
   min-width: 160px;
 }
 
-
-
 /*  */
 
-.service-details {
-    padding: 20px;
+.service_details {
+  display: flex;
+  margin-top: 0;
+    /* padding: 20px; */
     background-color: #f8f9fa; /* Add background color */
     border-radius: 10px; /* Add border radius */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    top:0;
+    margin-right: 0;
 }
 
-.service-details p {
+.service_details p {
     font-size: 16px;
     color: #333; /* Add text color */
 }
 
-.service-details img {
+.service_details img {
     max-width: 100%; /* Ensure image is responsive */
     border-radius: 10px; /* Add border radius */
     margin-bottom: 20px; /* Add spacing between image and text */
