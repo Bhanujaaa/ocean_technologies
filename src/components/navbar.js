@@ -12,13 +12,13 @@ function Navbar() {
         <div className="navbar-links">
           <a href="about">About Us</a>
           <a href="contact">Contact Us</a>
-          <a href="we_do">We Do</a>
+          
           <div className="dropdown">
             <button className="dropbtn">Services
               <i className="fa fa-caret-down"></i>
             </button>
             <div className="dropdown-content">
-              <a href="#">Banking & Insurance</a>
+              <a href="/service">Banking & Insurance</a>
               <a href="#">Financial Services</a>
               <a href="#">Airlines & Automobiles</a>
               <a href="#">Education</a>
@@ -30,6 +30,7 @@ function Navbar() {
               <a href="#">Careers</a>
             </div>
           </div>
+          <a href="we_do">We Do</a>
           {/* Add more links as needed */}
         </div>
       </div>
