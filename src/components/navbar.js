@@ -18,16 +18,16 @@ function Navbar() {
               <i className="fa fa-caret-down"></i>
             </button>
             <div className="dropdown-content">
-              <a href="/service">Banking & Insurance</a>
-              <a href="#">Financial Services</a>
-              <a href="#">Airlines & Automobiles</a>
-              <a href="#">Education</a>
-              <a href="#">Engineering</a>
-              <a href="#">Technology & Telecom</a>
-              <a href="#">Retail & Consumer services</a>
-              <a href="#">New Application Development</a>
-              <a href="#">Manufacturing</a>
-              <a href="#">Careers</a>
+              <a href="/service/1">Banking & Insurance</a>
+              <a href="/service/2">Financial Services</a>
+              <a href="/service/3">Airlines & Automobiles</a>
+              <a href="/service/4">Education</a>
+              <a href="/service/5">Engineering</a>
+              <a href="/service/6">Technology & Telecom</a>
+              <a href="/service/7">Retail & Consumer services</a>
+              <a href="/service/8">New Application Development</a>
+              <a href="/service/9">Manufacturing</a>
+              <a href="/service/10">Careers</a>
             </div>
           </div>
           <a href="we_do">We Do</a>
