@@ -1,0 +1,73 @@
+import React,{useState} from 'react';
+import Navbar from './navbar';
+import { useParams, useNavigate } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../styling/contact_us.css"
+import phone from "../images/phone.png"
+import email from "../images/email.png"
+import loc from "../images/Loc.jpg"
+
+function ContactUs() {
+    const [showForm, setShowForm] = useState(false);
+
+  const toggleForm = () => {
+    setShowForm(!showForm);
+  };
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission logic
+  };
+  const handleIconMouseEnter = (e) => {
+    e.target.style.transform = 'scale(1.1)';
+    e.target.style.transition = 'transform 0.3s ease';
+  };
+
+  const handleIconMouseLeave = (e) => {
+    e.target.style.transform = 'scale(1)';
+  };
+    return (
+        <div>
+            <div>
+                <Navbar />
+            </div>
+            <div>
+                <div className="background-image"></div>
+                <div className="icons-container">
+        <Icon icon={phone} text="Call us now at: +123 456 7890" onMouseEnter={handleIconMouseEnter} onMouseLeave={handleIconMouseLeave} />
+        <Icon icon={email} text="Send us an email: contact@example.com" onMouseEnter={handleIconMouseEnter} onMouseLeave={handleIconMouseLeave} />
+        <Icon icon={loc} text="Visit us at: 123 Example Street, City, Country" onMouseEnter={handleIconMouseEnter} onMouseLeave={handleIconMouseLeave} />
+      </div>
+                <div className="chat-box">
+                <button id="toggleFormButton" onClick={toggleForm}>{showForm ? 'Close Form' : 'Message Us'}</button>
+                {showForm && (
+                    <form onSubmit={handleFormSubmit}  id="contactForm" styles={"display: none;"}>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" placeholder="Enter your name" required />
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="Enter your email" required />
+
+                        <label for="mobile">Mobile:</label>
+                        <input type="tel" id="mobile" placeholder="Enter your mobile number" required />
+
+                        <label for="query">Query:</label>
+                        <textarea id="query" placeholder="Enter your query" required></textarea>
+
+                        <button type="submit" id="sendButton">Send Message</button>
+                    </form>)}
+                </div>
+            </div>
+        </div>
+    );
+
+}
+function Icon({ icon, text, onMouseEnter, onMouseLeave }) {
+    return (
+      <div className="icon">
+        <img src={icon} alt="Icon" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} />
+        <p>{text}</p>
+      </div>
+    );
+  }
+
+export default ContactUs;

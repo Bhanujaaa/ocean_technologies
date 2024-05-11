@@ -6,7 +6,6 @@ import "../styling/services.css"
 
 function ServiceDetails() {
     const { id } = useParams()
-    const id_int = parseInt(id)
     return (
         <div className='services_page'>
             <div>

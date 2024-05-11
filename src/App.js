@@ -4,6 +4,7 @@ import CarouselComponent from './components/CarouselComponent';
 import Navbar from './components/navbar';
 import ServiceDetails from './components/services';
 import Home from './components/home';
+import ContactUs from './components/contact_us';
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/service/:id" element={<ServiceDetails />} />
+          <Route path="/contactus" element={<ContactUs />} />
+
         </Routes>
       </BrowserRouter>
     </>

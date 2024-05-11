@@ -1,0 +1,87 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;  /* Example background color */
+}
+
+.background-image {
+    height: 40vh; /* Half the height of the viewport */
+    width: 100%;
+    margin-top: 120px;
+    background: url('../images/background.jpg') no-repeat center center/cover;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%; /* Distribute space equally */
+    text-align: center;
+}
+
+.icon img {
+    width: 80px;  /* Medium icon size */
+    height: auto;
+    margin-bottom: 10px; /* Space between the icon and the description */
+}
+
+.icon p {
+    font-size: 16px;
+    color: #333;
+}
+
+.chat-box {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 10px;
+    z-index: 1000;
+    width: 300px;
+}
+
+.chat-box button, .chat-box input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.chat-box button:hover, .chat-box input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* #contactForm {
+    display: none;
+    flex-direction: column;
+} */
+
+#contactForm label {
+    margin-bottom: 5px;
+}
+
+#contactForm input, #contactForm textarea {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
