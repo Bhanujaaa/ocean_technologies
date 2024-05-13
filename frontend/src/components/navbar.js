@@ -13,7 +13,7 @@ function Navbar() {
         <div className="navbar-links">
         <a href="/">Home</a>
           <a href="about">About Us</a>
-          <a href="/contactus">Contact Us</a>
+         
           
           <div className="dropdown">
             <button className="dropbtn">Services
@@ -32,7 +32,8 @@ function Navbar() {
               <a href="/service/10">Careers</a>
             </div>
           </div>
-          <a href="we_do">We Do</a>
+          <a href="/we_do">We Do</a>
+          <a href="/contactus">Contact Us</a>
           {/* Add more links as needed */}
         </div>
       </div>

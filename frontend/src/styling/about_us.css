@@ -1,0 +1,38 @@
+
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+.content{
+    margin-top: 150px;
+}
+
+.vision, .mission {
+    margin-bottom: 30px;
+}
+
+.vision h2, .mission h2 {
+    color: #084F91;
+    margin-bottom: 10px;
+}
+
+.vision ul, .mission p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.vision ul li {
+    margin-bottom: 10px;
+}
