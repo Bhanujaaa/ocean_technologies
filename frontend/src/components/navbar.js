@@ -12,8 +12,8 @@ function Navbar() {
         </div>
         <div className="navbar-links">
         <a href="/">Home</a>
-          <a href="about">About Us</a>
-         
+          <a href="/about">About Us</a>
+          <a href="/mission">Mission</a>
           
           <div className="dropdown">
             <button className="dropbtn">Services

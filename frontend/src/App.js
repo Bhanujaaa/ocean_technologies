@@ -7,7 +7,7 @@ import Home from './components/home';
 import ContactUs from './components/contact_us';
 import WhatWeDo from './components/what_we_do';
 import AboutUsPage from './components/about_us';
-
+import Mission from './components/mission';
 function App() {
   return (
     <>
@@ -18,6 +18,7 @@ function App() {
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/we_do" element={<WhatWeDo />} />
           <Route path="/about" element={<AboutUsPage />} />
+          <Route path="/mission" element={<Mission />} />
 
         </Routes>
       </BrowserRouter>
