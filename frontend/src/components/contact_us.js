@@ -6,15 +6,44 @@ import "../styling/contact_us.css"
 import phone from "../images/phone.png"
 import email from "../images/email.png"
 import loc from "../images/Loc.jpg"
+import axios from 'axios';
 
 function ContactUs() {
     const [showForm, setShowForm] = useState(false);
+    const [name,setName]=useState("");
+    const [emailu, setEmail] = useState("");
+    const [mobile, setMobile] = useState("");
+    const [query, setQuery] = useState("");
+
 
   const toggleForm = () => {
     setShowForm(!showForm);
   };
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
+    const formData = {
+      name,
+      emailu,
+      mobile,
+      query,
+  };
+
+  try {
+    const response = await axios.post('http://localhost:4000/sendMail', formData);
+
+    if (response.status === 200) {
+        alert("Message sent successfully!");
+        setName("");
+        setEmail("");
+        setMobile("");
+        setQuery("");
+        setShowForm(false);
+    } else {
+        alert(`Error: ${response.data.message}`);
+    }
+} catch (error) {
+    alert(`Error: ${error.response ? error.response.data.message : error.message}`);
+}
     // Handle form submission logic
   };
   const handleIconMouseEnter = (e) => {
@@ -42,16 +71,16 @@ function ContactUs() {
                 {showForm && (
                     <form onSubmit={handleFormSubmit}  id="contactForm" styles={"display: none;"}>
                         <label for="name">Name:</label>
-                        <input type="text" id="name" placeholder="Enter your name" required />
+                        <input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)} placeholder="Enter your name" required />
 
                         <label for="email">Email:</label>
-                        <input type="email" id="email" placeholder="Enter your email" required />
+                        <input type="email" id="email" value={emailu} onChange={(e) => setEmail(e.target.value)} placeholder="Enter your email" required />
 
                         <label for="mobile">Mobile:</label>
-                        <input type="tel" id="mobile" placeholder="Enter your mobile number" required />
+                        <input type="tel" id="mobile" value={mobile} onChange={(e) => setMobile(e.target.value)} placeholder="Enter your mobile number" required />
 
                         <label for="query">Query:</label>
-                        <textarea id="query" placeholder="Enter your query" required></textarea>
+                        <textarea id="query" value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Enter your query" required></textarea>
 
                         <button type="submit" id="sendButton">Send Message</button>
                     </form>)}
