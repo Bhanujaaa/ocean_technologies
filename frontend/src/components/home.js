@@ -28,18 +28,15 @@ function Home() {
                             Our only goal is to maximize client returns through offshoring and outsourcing. Our vast experience encompasses both real-time management of sizable IT applications and high-end services related to packaged corporate applications.
                         </p>
                     </section>
-                    <section id="contact" className="section">
-                        <h2 className='home_heading'>Contact Us</h2>
-                        <p>Add your Contact Us content here...</p>
-                    </section>
                     <section id="services" className="section">
                         <h2 className='home_heading'>Services</h2>
                         <p>Add your Services content here...</p>
                     </section>
-                    <section id="industry" className="section">
-                        <h2 className='home_heading'>Industry</h2>
-                        <p>Add your Industry content here...</p>
+                    <section id="contact" className="section">
+                        <h2 className='home_heading'>Contact Us</h2>
+                        <p>Add your Contact Us content here...</p>
                     </section>
+                    
                     {/* Add more sections as needed */}
                 </main>
                 <footer>

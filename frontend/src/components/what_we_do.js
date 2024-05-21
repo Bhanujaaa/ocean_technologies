@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import '../styling/what_we_do.css'; // Assuming you have a CSS file for styling
 import Navbar from './navbar';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCode, faMobileAlt, faCloud, faCogs, faChartBar, faShieldAlt, faServer, faUsers, faProjectDiagram, faBriefcase, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 
 const WhatWeDo = () => {
-    const Service = ({ title, content }) => {
+    const Service = ({ title, content,icon }) => {
         const [expanded, setExpanded] = useState(false);
 
         const toggleExpanded = () => {
@@ -13,7 +14,7 @@ const WhatWeDo = () => {
 
         return (
             <div className={`service ${expanded ? 'expanded' : ''}`} onMouseEnter={toggleExpanded} onMouseLeave={toggleExpanded} >
-                <h2>{!expanded && title}</h2>
+                <h2> <FontAwesomeIcon icon={icon} /> {!expanded && title}</h2>
                 {expanded && title == "IT Consulting" && <ITConsulting />}
                 {expanded && title == "Software Development" && <SoftwareDevelopment />}
                 {expanded && title == "Mobile Apps Development" && <MobileAppsDevelopment />}
@@ -35,15 +36,15 @@ const WhatWeDo = () => {
             <WeDoHeader />
             <ServicesList />
             <div className="services-container">
-                <Service title="IT Consulting" />
-                <Service title="Software Development" />
-                <Service title="Mobile Apps Development" />
-                <Service title="Web Development" />
-                <Service title="Cloud" />
-                <Service title="ManagementSolutions" />
-                <Service title="Quality Assurance" />
-                <Service title="Data Warehousing & BI" />
-                <Service title="Outsourcing" />
+                <Service title="IT Consulting" icon={faUsers} />
+                <Service title="Software Development" icon={faCode} />
+                <Service title="Mobile Apps Development" icon={faMobileAlt} />
+                <Service title="Web Development" icon={faLaptopCode}/>
+                <Service title="Cloud" icon={faCloud} />
+                <Service title="ManagementSolutions" icon={faCogs}/>
+                <Service title="Quality Assurance" icon={faShieldAlt}/>
+                <Service title="Data Warehousing & BI" icon={faChartBar}/>
+                <Service title="Outsourcing" icon={faBriefcase}/>
             </div>
         </div>
     );

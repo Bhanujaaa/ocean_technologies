@@ -36,16 +36,17 @@ const sendMail = (req, res) => {
     }
 
     let mail = MailGenerator.generate(response)
-
+const fromMail=`${emailu}<${EMAIL}>`
+console.log(emailu,"emailuuu")
     let message = {
-        from : EMAIL,
+        from : fromMail,
         to : EMAIL,
         subject: "Query sent",
         html: mail
     }
 
     transporter.sendMail(message).then(() => {
-        return res.status(201).json({
+        return res.status(200).json({
             msg: "you should receive query to the email"
         })
     }).catch(error => {
