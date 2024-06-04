@@ -5,7 +5,7 @@
   }
 
   .section {
-    padding: 120px 0; /* Increased padding to accommodate fixed navbar */
+    padding: 50px 0; /* Increased padding to accommodate fixed navbar */
   }
   
   .section h2 {
@@ -36,4 +36,60 @@
   }
   .home_heading{
     color: #084F91!important;
+  }
+
+  .gallery-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .gallery {
+    display: flex;
+    animation: scroll 20s linear infinite;
+  }
+  
+  .image-container {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .image-container img {
+    width: 250px; /* Adjust width as needed */
+    height: 300px; /* Adjust height as needed */
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-container .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.05);
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
   }

@@ -32,8 +32,11 @@ function Navbar() {
               <a href="/service/10">Careers</a>
             </div>
           </div>
+          <a href="/jobs">Jobs</a>
           <a href="/we_do">We Do</a>
+          
           <a href="/contactus">Contact Us</a>
+    
           {/* Add more links as needed */}
         </div>
       </div>

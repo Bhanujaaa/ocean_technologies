@@ -8,6 +8,8 @@ import ContactUs from './components/contact_us';
 import WhatWeDo from './components/what_we_do';
 import AboutUsPage from './components/about_us';
 import Mission from './components/mission';
+import PostJob from './components/postJobs';
+import Jobs from './components/jobs';
 function App() {
   return (
     <>
@@ -19,6 +21,8 @@ function App() {
           <Route path="/we_do" element={<WhatWeDo />} />
           <Route path="/about" element={<AboutUsPage />} />
           <Route path="/mission" element={<Mission />} />
+          <Route path="/postjob" element={ <PostJob/>} />
+          <Route path="/jobs" element={ <Jobs/>} />
 
         </Routes>
       </BrowserRouter>

@@ -3,8 +3,34 @@ import "../styling/navbar.css"
 import "../styling/home.css"
 import Navbar from './navbar';
 import CarouselComponent from './CarouselComponent';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import Airlines_Automobiles from "../images/Airlines & Automobiles.jpeg"
+import Banking_Insurance from "../images/Banking and Insurance.jpeg"
+import Careers from "../images/Careers.png"
+import Education from "../images/Education.jpeg"
+import Engineering from "../images/Engineering.webp"
+import Financial_Services from "../images/Financial Services.avif"
+import Manufacturing from "../images/Manufacturing.jpeg"
+import New_Application_Developement from "../images/New Application Developement.jpeg"
+import Retail_ConsumerServices from "../images/Retail & Consumer services.png"
+import Technology_Telecom from "../images/Technology & Telecom.jpeg"
+import ContactUs from './contact_us';
+
+const images = [
+  { src: Banking_Insurance, alt: 'Service Image 1', overlayText: 'Banking And Insurance' },
+  { src: Financial_Services, alt: 'Service Image 2', overlayText: 'Financial Services' },
+  { src: Airlines_Automobiles, alt: 'Service Image 3', overlayText: 'Airlines & Automobiles' },
+  { src: Education, alt: 'Service Image 4', overlayText: 'Education' },
+  { src: Engineering, alt: 'Service Image 5', overlayText: 'Engineering' },
+  { src: Technology_Telecom, alt: 'Service Image 6', overlayText: 'Technology & Telecom' },
+  { src: Retail_ConsumerServices, alt: 'Service Image 7', overlayText: 'Retail & Consumer services' },
+  { src: New_Application_Developement, alt: 'Service Image 8', overlayText: 'New Application Development' },
+  { src: Manufacturing, alt: 'Service Image 9', overlayText: 'Manufacturing' },
+  { src:Careers, alt: 'Service Image 10', overlayText: 'Careers' },
+];
 
 function Home() {
+    
     return (
         <div className="App">
 
@@ -17,7 +43,7 @@ function Home() {
                 <main>
                     <CarouselComponent />
                     <br></br>
-                    <div className='home_details'>
+                    <div className='home_details section'>
                         <h2 className='home_heading'>WHO WE ARE</h2>
                         Ocean Technologies Whether you need services for manufacturing, banking & finance, education, insurance, medical & health care, multimedia & entertainment, real estate, retail stores, travel & hospitality, or any other industry, this global provider of software development, process outsourcing, and corporate consulting is ready to meet your needs.
                     </div>
@@ -30,13 +56,22 @@ function Home() {
                     </section>
                     <section id="services" className="section">
                         <h2 className='home_heading'>Services</h2>
-                        <p>Add your Services content here...</p>
+                        <div className="gallery-container">
+      <div className="gallery">
+        {images.map((image, index) => (
+          <div className="image-container" key={index}>
+             <Link to={`/service/${index+1}`}>
+            <img src={image.src} alt={image.alt} />
+            <div className="overlay">{image.overlayText}</div>
+            </Link>
+          </div>
+        ))}
+      </div>
+    </div>
                     </section>
-                    <section id="contact" className="section">
-                        <h2 className='home_heading'>Contact Us</h2>
-                        <p>Add your Contact Us content here...</p>
+                    <section>
+                        {/* <ContactUs/> */}
                     </section>
-                    
                     {/* Add more sections as needed */}
                 </main>
                 <footer>

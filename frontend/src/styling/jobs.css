@@ -1,0 +1,33 @@
+.jobs-container {
+    display: flex;
+    margin-top: 150px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .job-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #084F91;
+    margin: 15px;
+    padding: 20px;
+    width: 500px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .job-card h2 {
+    font-size: 1.5em;
+    margin: 0 0 10px 0;
+  }
+  
+  .job-card p {
+    margin: 0 0 10px 0;
+  }
+  
+  .job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px#084F91;
+  }

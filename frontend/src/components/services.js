@@ -4,6 +4,16 @@ import { useParams, useNavigate } from "react-router-dom";
 import "animate.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styling/services.css"
+import Airlines_Automobiles from "../images/Airlines & Automobiles.jpeg"
+import Banking_Insurance from "../images/Banking and Insurance.jpeg"
+import Careers from "../images/Careers.png"
+import Education from "../images/Education.jpeg"
+import Engineering from "../images/Engineering.webp"
+import Financial_Services from "../images/Financial Services.avif"
+import Manufacturing from "../images/Manufacturing.jpeg"
+import New_Application_Developement from "../images/New Application Developement.jpeg"
+import Retail_ConsumerServices from "../images/Retail & Consumer services.png"
+import Technology_Telecom from "../images/Technology & Telecom.jpeg"
 
 function ServiceDetails() {
     const { id } = useParams()
@@ -20,61 +30,61 @@ function ServiceDetails() {
                 {id == 1 ? <>
                     <h2 className='service_heading'>Banking and Insurance</h2>
                     <div className={`service-image-container animate__animated ${slideDirection} ${delayClass}`}>
-                        <img src="https://swisscognitive.ch/wp-content/uploads/2021/07/ai-in-banking-and-insurance-use-cases.jpeg" alt="Service" className="img-fluid" />
+                        <img src={Banking_Insurance} alt="Service" className="img-fluid" />
                     </div>
                 </> : <></>}
                 {id == 2 ? <>
                     <h2 className='service_heading'>Financial Services</h2>
                     <div className={`service-image-container animate__animated ${slideDirection} ${delayClass}`}>
-                        <img src="https://img.freepik.com/premium-photo/finance-money-transaction-technology-concept_31965-11341.jpg" alt="Service" className="img-fluid" />
+                        <img src={Financial_Services} alt="Service" className="img-fluid" />
                     </div>
                 </> : <></>}
                 {id == 3 ? <>
                     <h2 className='service_heading'>Airlines & Automobiles</h2>
                     <div className={`service-image-container animate__animated ${slideDirection} ${delayClass}`}>
-                        <img src="https://ca-times.brightspotcdn.com/dims4/default/fcf2189/2147483647/strip/true/crop/4200x2363+0+267/resize/1200x675!/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fd2%2F08%2Faa2e983042ee848eb578aacc4343%2F463924-airport-carbon-021.jpg" alt="Service" className="img-fluid" />
+                        <img src={Airlines_Automobiles} alt="Service" className="img-fluid" />
                     </div>
                 </> : <></>}
                 {id == 4 ? <>
                     <h2 className='service_heading'>Education</h2>
                     <div className={`service-image-container animate__animated ${slideDirection} ${delayClass}`}>
-                        <img src="https://www.strath.ac.uk/media/1newwebsite/departmentsubject/education/1600x600/education_title_2.jpg" alt="Service" className="img-fluid" />
+                        <img src={Education} alt="Service" className="img-fluid" />
                     </div>
                 </> : <></>}
                 {id == 5 ? <>
                     <h2 className='service_heading'>Engineering</h2>
                     <div className={`service-image-container animate__animated ${slideDirection} ${delayClass}`}>
-                        <img src="https://thumbs.dreamstime.com/b/gears-cogwheel-engineering-automation-solution-teamwork-cooperation-business-concept-city-view-website-header-banner-207049810.jpg" alt="Service" className="img-fluid" />
+                        <img src={Engineering} alt="Service" className="img-fluid" />
                     </div>
                 </> : <></>}
                 {id == 6 ? <>
                     <h2 className='service_heading'>Technology & Telecom</h2>
                     <div className={`service-image-container animate__animated ${slideDirection} ${delayClass}`}>
-                        <img src="https://dist.neo4j.com/wp-content/uploads/20170920205520/telecom-banner-2017.jpg" alt="Service" className="img-fluid" />
+                        <img src={Technology_Telecom} alt="Service" className="img-fluid" />
                     </div>
                 </> : <></>}
                 {id == 7 ? <>
                     <h2 className='service_heading'>Retail & Consumer services</h2>
                     <div className={`service-image-container animate__animated ${slideDirection} ${delayClass}`}>
-                        <img src="https://www.prophia.com/hs-fs/hubfs/HEADER-NO%20BOX.png?width=4001&height=1648&name=HEADER-NO%20BOX.png" alt="Service" className="img-fluid" />
+                        <img src={Retail_ConsumerServices} alt="Service" className="img-fluid" />
                     </div>
                 </> : <></>}
                 {id == 8 ? <>
                     <h2 className='service_heading'>New Application Development</h2>
                     <div className={`service-image-container animate__animated ${slideDirection} ${delayClass}`}>
-                        <img src="https://ncube.com/wp-content/uploads/2020/02/Top-8-Software-Development-Models.jpg" alt="Service" className="img-fluid" />
+                        <img src={New_Application_Developement} alt="Service" className="img-fluid" />
                     </div>
                 </> : <></>}
                 {id == 9 ? <>
                     <h2 className='service_heading'>Manufacturing</h2>
                     <div className={`service-image-container animate__animated ${slideDirection} ${delayClass}`}>
-                        <img src="https://as1.ftcdn.net/v2/jpg/02/96/11/58/1000_F_296115877_cCemh1wq3aFPeB240V00CQRW3f11820a.jpg" alt="Service" className="img-fluid" />
+                        <img src={Manufacturing} alt="Service" className="img-fluid" />
                     </div>
                 </> : <></>}
                 {id == 10 ? <>
                     <h2 className='service_heading'>Careers</h2>
                     <div className={`service-image-container animate__animated ${slideDirection} ${delayClass}`}>
-                        <img src="https://libertyhospitalfoundation.org/wp-content/uploads/2023/03/careers-header.png" alt="Service" className="img-fluid" />
+                        <img src={Careers} alt="Service" className="img-fluid" />
                     </div>
                 </> : <></>}
        
