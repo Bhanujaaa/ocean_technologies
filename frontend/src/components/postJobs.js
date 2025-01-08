@@ -10,7 +10,7 @@ function PostJob() {
   });
   
   const [submitted, setSubmitted] = useState(false);
-  const url = "http://localhost:4000/jobs";
+  const url = "https://api.ocean-technology.org/jobs";
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({

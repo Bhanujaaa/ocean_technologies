@@ -5,7 +5,7 @@ import Navbar from './navbar';
 export default function Jobs() {
   const [jobs, setJobs] = useState([]);
 
-  const url="http://localhost:4000/jobs"
+  const url="https://api.ocean-technology.org/jobs"
   useEffect(() => {
     Axios.get(`${url}`)
       .then((response) => {

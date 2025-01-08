@@ -29,7 +29,7 @@ function ContactUs() {
   };
 
   try {
-    const response = await axios.post('http://localhost:4000/sendMail', formData);
+    const response = await axios.post('https://api.ocean-technology.org/sendMail', formData);
 
     if (response.status === 200) {
         alert("Message sent successfully!");
