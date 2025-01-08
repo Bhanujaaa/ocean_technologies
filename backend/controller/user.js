@@ -1,9 +1,10 @@
 const nodemailer = require('nodemailer');
 const Mailgen = require('mailgen');
+require('dotenv').config();
+const EMAIL= process.env.EMAIL
+const PASSWORD=process.env.PASSWORD
 
-const { EMAIL, PASSWORD } = require('../env')
-
-
+console.log(EMAIL,PASSWORD)
 const sendMail = (req, res) => {
 
     const { name, emailu, mobile, query } = req.body;
