@@ -14,6 +14,9 @@ import Manufacturing from "../images/Manufacturing.jpeg"
 import New_Application_Developement from "../images/New Application Developement.jpeg"
 import Retail_ConsumerServices from "../images/Retail & Consumer services.png"
 import Technology_Telecom from "../images/Technology & Telecom.jpeg"
+import QualityAssurance from "../images/quality.jpg"
+import BiomedicalRegulatory from "../images/biomedical.jpg"
+
 
 function ServiceDetails() {
     const { id } = useParams()
@@ -82,11 +85,25 @@ function ServiceDetails() {
                     </div>
                 </> : <></>}
                 {id == 10 ? <>
+                    <h2 className='service_heading'>Quality Assurance</h2>
+                    <div className={`service-image-container animate__animated ${slideDirection} ${delayClass}`}>
+                        <img src={QualityAssurance} alt="Service" className="img-fluid" />
+                    </div>
+                </> : <></>}
+                {id == 11 ? <>
+                    <h2 className='service_heading'>Biomedical Regulatory Affairs</h2>
+                    <div className={`service-image-container animate__animated ${slideDirection} ${delayClass}`}>
+                        <img src={BiomedicalRegulatory} alt="Service" className="img-fluid" />
+                    </div>
+                </> : <></>}
+                {id == 12 ? <>
                     <h2 className='service_heading'>Careers</h2>
                     <div className={`service-image-container animate__animated ${slideDirection} ${delayClass}`}>
                         <img src={Careers} alt="Service" className="img-fluid" />
                     </div>
                 </> : <></>}
+
+           
        
             <div className='service_details'>
 
@@ -235,7 +252,39 @@ function ServiceDetails() {
                                     </div>
                                 </div>
                             </div></> : <></>}
-                        {id == 10 ? <><div className="row">
+                            {id == 10 ? <><div className="row">
+                            <div>
+                              
+                            </div>
+                        </div>
+                            <div>
+                                <div >
+                                    <div className="service-details animate__animated animate__slideInDown">
+                                        <br></br>
+                                        <p>We provide comprehensive quality assurance (QA) services designed to ensure your products consistently meet the highest industry standards.
+Recognizing the pivotal role of quality in the pharmaceutical, biologics, medical devices, and cell and gene therapy sectors, we adopt a thorough and tailored approach to QA.
+Our solutions are customized to address your specific needs, offering expert QA professionals skilled in maintaining strict regulatory compliance while upholding exceptional quality standards.
+Our team consists of seasoned experts proficient in quality management systems, regulatory frameworks, and industry best practices, dedicated to safeguarding the integrity of your products and processes.</p>
+                                    </div>
+                                </div>
+                            </div></> : <></>}
+                            {id == 11 ? <><div className="row">
+                            <div>
+                              
+                            </div>
+                        </div>
+                            <div>
+                                <div >
+                                    <div className="service-details animate__animated animate__slideInDown">
+                                        <br></br>
+                                        <p>The rapid evolution of technology is revolutionizing the healthcare and life sciences sectors, enabling groundbreaking achievements that were once deemed impossible. This technological shift creates exciting opportunities while introducing complex challenges.
+Simplify your regulatory compliance processes with our specialized staffing solutions in regulatory affairs and biostatistics. We provide highly qualified professionals who excel in navigating complex regulatory frameworks and delivering critical project support. Our experts ensure precision in execution, helping you meet compliance standards and accelerate your time to market.
+By partnering with us, you gain access to top-tier talent dedicated to refining your regulatory strategies and enhancing operational efficiency. Let us help you achieve seamless compliance and operational excellence through our customized staffing solutions tailored to your unique needs.</p>
+                                    </div>
+                                </div>
+                            </div></> : <></>}
+
+                        {id == 12 ? <><div className="row">
                             <div>
                               
                             </div>
@@ -272,8 +321,12 @@ function ServiceDetails() {
                             <a href="/service/8">New Application Development</a></li>
                         <li>
                             <a href="/service/9">Manufacturing</a></li>
+                            <li>
+                            <a href="/service/10">Quality Assurance</a></li>
+                            <li>
+                            <a href="/service/11">Biomedical Regulatory Affairs</a></li>
                         <li>
-                            <a href="/service/10">Careers</a></li>
+                            <a href="/service/12">Careers</a></li>
                     </div>
                 </div>
             </div>

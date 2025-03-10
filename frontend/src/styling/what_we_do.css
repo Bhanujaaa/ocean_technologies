@@ -9,8 +9,8 @@ margin-top: 140px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    overflow: scroll; /* Hide overflow content */
-    height: 60vh; /* Fixed height for service containers */
+    overflow: scroll; 
+    height: 60vh; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,4 +58,17 @@ display: block;
     flex-wrap: wrap;
     justify-content: center; /* Center items horizontally */
     align-items: center; /* Center items vertically */
+}
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column; /* Stacks services vertically on smaller screens */
+        align-items: stretch; /* Makes sure items take full width */
+        gap: 15px; /* Reduces gap for better spacing */
+    }
+    .service{
+        height: 70vh;
+    }
+    .we-do-header{
+        padding-top: 10px;
+    }
 }

@@ -11,7 +11,7 @@ body, html {
 .background-image {
     height: 40vh; /* Half the height of the viewport */
     width: 100%;
-    margin-top: 120px;
+    margin-top: 90px;
     background: url('../images/background.jpg') no-repeat center center/cover;
 }
 
@@ -84,4 +84,47 @@ body, html {
     border: 1px solid #ccc;
     border-radius: 4px;
     width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .icons-container {
+        flex-direction: column;
+        height: 110vh;
+    }
+
+    .icon {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .background-image {
+        height: 30vh;
+        margin-top: 200px;
+    }
+
+    .chat-box {
+        width: 90%;
+        right: 5%;
+        bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .background-image {
+        height: 25vh;
+        margin-top: 140px;
+    }
+
+    .icon img {
+        width: 60px;
+    }
+
+    .icon p {
+        font-size: 14px;
+    }
+
+    .chat-box {
+        width: 95%;
+        right: 2.5%;
+    }
 }

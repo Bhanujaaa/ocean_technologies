@@ -1,12 +1,20 @@
-
+/* Default styling for larger screens (laptops) */
+.about-us-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
 
 .content {
     max-width: 800px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .content h1 {
     text-align: center;
+    font-size: 32px;
     margin-bottom: 20px;
 }
 
@@ -14,43 +22,7 @@
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 15px;
-}
-.content{
-    margin-top: 150px;
-}
-
-.vision, .mission {
-    margin-bottom: 30px;
-}
-
-.vision h2, .mission h2 {
-    color: white;
-    margin-bottom: 10px;
-}
-
-.vision ul, .mission p {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-.vision ul li {
-    margin-bottom: 10px;
-}
-
-/* about_us.css */
-
-
-.content {
-    margin-top: 150px;
-    max-width: 800px;
-}
-
-.about-us {
-    text-align: center;
-    margin-bottom: 20px;
-    /* animation: none; */
-
-    /* color: #333; */
+    text-align: justify;
 }
 
 .card {
@@ -62,18 +34,125 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    color: #084F91;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><circle cx="5" cy="5" r="5" fill="%23007BFF"/></svg>') left center no-repeat;
-    padding-left: 20px;
+.vision h2, .mission h2 {
+    color: white;
     margin-bottom: 10px;
-    line-height: 1.6;
 }
+
+.vision ul li {
+    margin-bottom: 10px;
+}
+
+/* Responsive Design for Tablets and Mobile */
+/* @media (max-width: 1024px) {
+    .content {
+        max-width: 90%;
+        padding: 0 20px;
+    }
+
+    .content h1 {
+        font-size: 28px;
+    }
+
+    .content p, .vision ul {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .card {
+        padding: 15px;
+    }
+} */
+
+/* @media (max-width: 768px) {
+    .about-us-page {
+        padding-top: 50px;
+    }
+
+    .content {
+        max-width: 95%;
+        padding: 0 15px;
+    }
+
+    .content h1 {
+        font-size: 24px;
+    }
+
+    .content p, .vision ul {
+        font-size: 15px;
+    }
+
+    .card {
+        padding: 12px;
+    }
+} */
+
+ @media (max-width: 480px) {
+    .about-us-page {
+        padding-top: 30px;
+    }
+
+    .content {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .content h1 {
+        font-size: 22px;
+        padding-top:100px;
+    }
+
+    .content p, .vision ul {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .card {
+        padding: 10px;
+    }
+}
+
+/*
+
+.about-us-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px; 
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.content h1 {
+    display: block;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #084F91; 
+} */
+
+/* Responsive Fix */
+/* @media (max-width: 768px) {
+    .about-us-page {
+        padding-top: 30px;
+    }
+
+    .content h1 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-us-page {
+        padding-top: 20px;
+    }
+
+    .content h1 {
+        font-size: 22px;
+    }
+} */

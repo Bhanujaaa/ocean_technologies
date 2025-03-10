@@ -62,9 +62,9 @@ function ContactUs() {
             <div>
                 <div className="background-image"></div>
                 <div className="icons-container">
-        <Icon icon={phone} text="Call us now at: +123 456 7890" onMouseEnter={handleIconMouseEnter} onMouseLeave={handleIconMouseLeave} />
-        <Icon icon={email} text="Send us an email: contact@example.com" onMouseEnter={handleIconMouseEnter} onMouseLeave={handleIconMouseLeave} />
-        <Icon icon={loc} text="Visit us at: 123 Example Street, City, Country" onMouseEnter={handleIconMouseEnter} onMouseLeave={handleIconMouseLeave} />
+        <Icon icon={phone} text="Call us now at: +1 (210) 338-1028" onMouseEnter={handleIconMouseEnter} onMouseLeave={handleIconMouseLeave} />
+        <Icon icon={email} text="Send us an email: marketing@oceanitsol.in" onMouseEnter={handleIconMouseEnter} onMouseLeave={handleIconMouseLeave} />
+        <Icon icon={loc} text="Visit us at: 14900 Nacogdoches rd, San Antonio, Texas, United States" onMouseEnter={handleIconMouseEnter} onMouseLeave={handleIconMouseLeave} />
       </div>
                 <div className="chat-box">
                 <button id="toggleFormButton" onClick={toggleForm}>{showForm ? 'Close Form' : 'Message Us'}</button>
