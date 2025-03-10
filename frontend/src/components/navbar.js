@@ -37,7 +37,9 @@ function Navbar() {
               <a href="/service/7">Retail & Consumer Services</a>
               <a href="/service/8">New Application Development</a>
               <a href="/service/9">Manufacturing</a>
-              <a href="/service/10">Careers</a>
+              <a href="/service/10">Quality Assurance</a>
+              <a href="/service/11">Biomedical Regulatory Affairs</a>
+              <a href="/service/12">Careers</a>
             </div>
           </div>
 

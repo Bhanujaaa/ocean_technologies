@@ -39,9 +39,12 @@
   border-radius: 5px;
 }
 
+
 /* Dropdown */
 .dropdown {
   position: relative;
+  /* float: left;
+   overflow: scroll; */
 }
 
 .dropdown .dropbtn {
@@ -54,11 +57,15 @@
   font-family: inherit;
   cursor: pointer;
 }
-
+/* .dropdown-content {
+  position: static;
+  background-color: #084F91;
+  box-shadow: none;
+} */
 /* Dropdown content */
 .dropdown-content {
   display: none;
-  position: absolute;
+  /* position: absolute; */
   background-color: #084F91;
   min-width: 200px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
@@ -66,6 +73,7 @@
 }
 
 .dropdown-content a {
+  /* float: none; */
   color: white;
   padding: 12px 16px;
   text-decoration: none;
@@ -80,6 +88,7 @@
 /* Show dropdown on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+  position: fixed;
 }
 
 /* Hamburger Menu */
@@ -127,7 +136,9 @@
   }
 
   .dropdown-content {
-    position: static;
+    max-height: 400px; /* Adjust based on your needs */
+    overflow-y: auto; /* Makes the dropdown scrollable */
+    font-size: small;
     background-color: #084F91;
     box-shadow: none;
   }
